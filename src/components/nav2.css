@@ -1,0 +1,235 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #007bff9f;
+    position: absolute;
+    height: auto;
+    max-height: 80px;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 30px;
+}
+
+.navbar-links {
+    user-select: none;
+    padding-right: 20px;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-logo-center {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    max-width: none;
+    height: auto;
+}
+
+.navbar-logo {
+    height: 150px;
+    overflow: visible;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-logo-center .navbar-logo img {
+    width: auto;
+    height: 100%;
+    max-width: 160px;
+}
+
+.navbar-desktop-links {
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .1em;
+    padding: 6px 20px;
+    transition: .5s;
+    height: 100%;
+}
+
+
+.navbar-desktop-links .link {
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.navbar-desktop-links .link:hover {
+    color: #0ef;
+}
+
+.navbar-desktop-links .Links {
+    position: relative;
+    width: 100%;
+    letter-spacing: 0.1em;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    height: 100%;
+    transition: .5s;
+}
+
+.navbar-desktop-links .Links:hover {
+    letter-spacing: 0.15em;
+    border: 5px solid #0ef;
+    box-shadow: 0 0 35px #0ef;
+}
+
+.navbar-desktop-links .Links::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+}
+
+.navbar-desktop-links .Links span {
+    position: relative;
+    z-index: 1;
+}
+
+.active-link {
+    color: red !important;
+}
+
+.navbar-cart {
+    font-size: 40px;
+}
+
+.navbar-mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-actions {
+    user-select: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar-cart {
+    margin-left: auto;
+}
+
+.navbar-mobile-menu-icon {
+    display: none;
+}
+
+.navbar-mobile-menu {
+    display: none;
+}
+
+.toggle-icon div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #fff;
+    transition: 0.3s ease-in;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        /* max-height: 100px; */
+        justify-content: space-between;
+    }
+
+    .navbar-content {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .navbar-logo-center {
+        width: 50%;
+    }
+
+    .navbar-logo {
+        height: 100px;
+        overflow: visible;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-desktop-links {
+        display: none;
+    }
+
+    .navbar-actions {
+        display: none;
+    }
+
+    .navbar-mobile-menu-icon {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .navbar-cart {
+        color: #fff;
+    }
+
+    .navbar-mobile-menu {
+        display: flex;
+        position: fixed;
+        top: 63px;
+        right: 0;
+        flex: 1 0;
+        height: calc(100vh - 100px);
+        width: 30%;
+        justify-content: space-evenly;
+        background: #007bff9f;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: .5s ease-in;
+        align-items: center;
+    }
+
+    .navbar-mobile-menu .Link-list-mobile {
+        list-style: none;
+        width: 100%;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        flex-shrink: 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.menu-active {
+    transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggler-icon .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggler-icon .line2 {
+    opacity: 0;
+}
+
+.toggler-icon .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}

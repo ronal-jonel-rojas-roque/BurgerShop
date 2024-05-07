@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../../../../fonts/FunCityLevel2Stencil.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contentpart5 {
+    padding-bottom: 50px;
+    margin-top: -20px;
+    width: 100%;
+    display: flex;
+    z-index: 999;
+}
+
+.containerpart5 {
+    width: 100%;
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.medpart5 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #A1D0D7;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-con-part5 {
+    width: 90%;
+    border: 3px solid #fff;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.web-btn {
+    color: #FFFFFF;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0 0 0 0;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.2;
+    letter-spacing: .2em;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'MyFont', sans-serif;
+    font-size: 1rem;
+
+}
+
+.izqpart5,
+.derpart5 {
+    width: 100%;
+}
+
+/* .web-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.row {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.web_1563787026586 {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.web_1563786965935 {
+    margin-left: -150px;
+} */

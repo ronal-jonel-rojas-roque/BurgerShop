@@ -1,0 +1,26 @@
+.container-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/fondo/fondo8.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.part2-section {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    height: 100vh;
+}
+
+.part4-section {
+    position: relative;
+    z-index: 999;
+}
+
+.part5-section {
+    position: relative;
+    z-index: 1000;
+}

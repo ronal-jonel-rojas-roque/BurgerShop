@@ -1,0 +1,115 @@
+/*:::::Pie de Pagina*/
+.pie-pagina {
+    background-color: #080E28;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box .h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box .p {
+    color: #efefef;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background: transparent;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+.fa-wathsapp {
+    background-color: transparent;
+    fill: white;
+    align-items: center;
+    align-content: center;
+    width: 3rem;
+    height: 2rem;
+}
+
+.contact {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-wathsapp:hover,
+.contact:hover {
+    color: #CFB53B;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .grupo-1 .red-social {
+        grid-column: span 3;
+        text-align: center;
+    }
+}

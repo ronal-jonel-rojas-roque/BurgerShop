@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "outDir": "./build",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "jsx": "react-jsx"
+    },
+    "include": [
+        "src",
+        "src/types"
+    ]
+}

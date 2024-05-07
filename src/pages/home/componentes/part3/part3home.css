@@ -1,0 +1,20 @@
+.Part3Home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: -50px;
+    z-index: 1;
+}
+
+.linePart3 {
+    width: 300px;
+    height: 2px;
+    background-color: #4dafc0;
+}
+
+.imgpart3{
+    height: 100%;
+    max-width: 100%;
+}
